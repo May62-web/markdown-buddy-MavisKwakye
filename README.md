@@ -28,7 +28,6 @@ The script creates a Shiny web application with a user interface. It displays te
 
 - `app.R` – R script used to build the Shiny application.
 - `README.md` – Documentation explaining the project.
-
-- ## AI Assistance Disclosure
+ ## AI Assistance Disclosure
 
 I used ChatGPT to help me plan the structure of my README file, improve the Markdown formatting, and understand how to document my R script. I reviewed the suggestions and made changes to make sure the final work matched the assignment requirements.
