@@ -1,31 +1,39 @@
 ---
 title: "R Script Documentation"
-output: html_document
 author: "Mavis Kwakye"
-
-date: "2026-09-27"
+date: "2026-09-29"
+output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+# Purpose
+
+The purpose of `app.R` is to create a simple Shiny web application. The application displays a heading, text, an image, and an interactive slider.
+
+# Inputs
+
+The application uses a slider input called `my_slider`. The user can select a number from 10 to 100, with a default value of 50.
+
+# Outputs
+
+The script produces a Shiny web page containing text, an image, and an interactive slider. A basic server function is included so the application can run.
+
+# Code Example
+
+```{r, eval=FALSE}
+library(shiny)
+
+ui <- fluidPage(
+  h1("First Shiny Website"),
+  p("I am excited to learn ", strong("Shiny"), "!"),
+  sliderInput("slider", "Pick a number:", min = 10, max = 100, value = 50)
+)
+
+server <- function(input, output) {
+}
+
+shinyApp(ui = ui, server = server)
 ```
 
-## R Markdown
+# Verification
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+I ran the `app.R` script in RStudio and checked that the Shiny application opened correctly. I also reviewed the headings and code block to make sure the R Markdown document was organized and readable.
