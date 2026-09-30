@@ -11,7 +11,7 @@ ui <- fluidPage(
   p("I am excited to learn ", strong("Shiny"), "!"),
   img(src = "https://media2.giphy.com/media/13q2Ip7FrmPE33EiI/giphy.gif"),
   p("I am excited to learn about ", em("sliders"), "!"),
-  sliderInput("slider", "Pick a number:", min = 0, max = 100, value = 50)
+  sliderInput("slider", "Pick a number:", min = 10, max = 100, value = 50)
 )
   # A first-level header (`h1()`) with the content "First Shiny Website"
 
